@@ -25,11 +25,11 @@ index_meta.extend(_meta)
 
 
 # Projects
-proyectos_title="olpabdev | Programmer"
-proyectos_descripcion = "There you will find some projects that I've been working on"
+projects_title="olpabdev | Programmer"
+projects_descripcion = "There you will find some projects that I've been working on"
 
 projects_meta = [
-    {"name" : "og:title", "content" : proyectos_title},
-    {"name" : "og:description", "content" : proyectos_descripcion}
+    {"name" : "og:title", "content" : projects_title},
+    {"name" : "og:description", "content" : projects_descripcion}
 ]
 projects_meta.extend(_meta)

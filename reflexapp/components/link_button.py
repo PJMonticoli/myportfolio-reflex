@@ -2,7 +2,7 @@ import reflex as rx
 import reflexapp.styles.styles as styles
 from reflexapp.styles.styles import Size
 
-def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
+def link_button(title: str, body: str, image: str, url: str,is_external=True) -> rx.Component:
     return rx.link(
         rx.button(
             rx.stack(
@@ -26,6 +26,6 @@ def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
             justify_content="start"  
         ),
         href=url,
-        is_external=True,
+        is_external=is_external,
         width="100%"
     )

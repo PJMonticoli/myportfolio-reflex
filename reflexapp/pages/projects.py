@@ -6,15 +6,16 @@ from reflexapp.components.footer import footer
 import reflexapp.styles.styles as styles
 from reflexapp.styles.styles import Size
 import reflexapp.utils as utils
-
+from reflexapp.routes.routes import Route
 @rx.page(
-  title= utils.index_title,  
-  description=utils.index_descripcion,  
+  route = Route.PROJECTS.value,  
+  title= utils.projects_title,  
+  description=utils.projects_descripcion,  
   image=utils.preview,  
-  meta=utils.index_meta,  
+  meta=utils.projects_meta,  
 )
 
-def index() -> rx.Component:
+def projects() -> rx.Component:
     return rx.box(
             utils.lang(),
             navbar(),

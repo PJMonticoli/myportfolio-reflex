@@ -2,8 +2,8 @@ import reflex as rx
 from reflexapp.components.link_button import link_button
 from reflexapp.components.title import title
 import reflexapp.views.constants as constants
-
-def links() -> rx.Component:
+import reflexapp.routes.routes as routes
+def index_links() -> rx.Component:
     return rx.vstack(
             title("My Social Networks"),
             link_button(
@@ -29,7 +29,8 @@ def links() -> rx.Component:
                 "Full-Stack project", 
                 "Developed with Angular and Supabase.",
                 "github.svg", 
-                constants.SUPABASE_GITHUB
+                routes.Route.PROJECTS.value,
+                is_external = False
                 ),
             link_button(
                 "Front-End portfolio", 

@@ -1,7 +1,7 @@
 import reflex as rx
 from  reflexapp.components.navbar import navbar
 from reflexapp.views.header import header
-from reflexapp.views.index_links import index_links
+from reflexapp.views.projects_links import projects_links
 from reflexapp.components.footer import footer
 import reflexapp.styles.styles as styles
 from reflexapp.styles.styles import Size
@@ -22,7 +22,7 @@ def projects() -> rx.Component:
             rx.center(
                 rx.vstack(
                     header(),
-                    index_links(),
+                    projects_links(),
                     footer(),
                     max_width= styles.MAX_WIDTH,
                     width="100%",

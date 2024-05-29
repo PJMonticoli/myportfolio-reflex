@@ -6,7 +6,7 @@ from reflexapp.styles.styles import Size as Size
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src="logo.png", 
+            src="/logo.png", 
             width="80px", 
             height="80px", 
             alt="logotipo olbapdev",

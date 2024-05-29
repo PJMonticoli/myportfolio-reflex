@@ -9,7 +9,7 @@ def navbar() -> rx.Component:
     return rx.hstack(
         rx.link(
             rx.flex(
-                rx.image(src="logo.png",width="30px", 
+                rx.image(src="/logo.png",width="30px", 
                 height="30px",border_radius="50%"),
                 rx.text.strong("olbapdev",color=Colors.PRIMARY.value,style=Styles.navbar_title_style)
             ),

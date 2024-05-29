@@ -5,56 +5,39 @@ import reflexapp.views.constants as constants
 import reflexapp.routes.routes as routes
 def index_links() -> rx.Component:
     return rx.vstack(
+            title("Personal Projects"),
+            link_button(
+                "GitHub Repositories", 
+                "HTML, CSS, JS, Angular, SQL, Supabase, Reflex and Python.",
+                "/github.svg", 
+                routes.Route.PROJECTS.value,
+                is_external = False
+                ),
             title("My Social Networks"),
             link_button(
                 "LinkedIn",
                 "There you will find my cv.",
-                "linkedin.svg", 
+                "/linkedin.svg", 
                 constants.LINKEDIN_URL
                 ),
             link_button(
                 "GitHub", 
                 "My GitHub profile and some repositories that I've been working on.",
-                "github.svg", 
+                "/github.svg", 
                 constants.GITHUB_URL
                 ),
             link_button(
                 "Instagram", 
                 "My instagram profile.",
-                "instagram.svg", 
+                "/instagram.svg", 
                 constants.INSTAGRAM_URL
                 ),
-            title("Personal Projects"),
-            link_button(
-                "Full-Stack project", 
-                "Developed with Angular and Supabase.",
-                "github.svg", 
-                routes.Route.PROJECTS.value,
-                is_external = False
-                ),
-            link_button(
-                "Front-End portfolio", 
-                "Developed with Reflex(Python).",
-                "github.svg", 
-                constants.PORTFOLIO_GITHUB
-                ),
-            link_button(
-                "Front-End Ecommerce", 
-                "Developed with Angular.",
-                "github.svg", 
-                constants.REPO_GITHUBFRONT
-                ),
-            link_button(
-                "Back-End Ecommerce", 
-                "Developed with NodeJs(Framework ExpressJs).",
-                "github.svg", 
-                constants.REPO_GITHUBBACK
-                ),
+
             title("Contact"),
             link_button(
                 "Linktr.ee", 
                 "How to reach me",
-                "contacto.svg", 
+                "/contacto.svg", 
                 constants.LINKTREE
                 ),
             width="100%",

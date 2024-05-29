@@ -2,9 +2,10 @@ import reflex as rx
 import datetime
 from reflexapp.styles.colors import TextColor as TextColor
 from reflexapp.styles.styles import Size as Size
-
+import reflexapp.routes.routes as router
 def footer() -> rx.Component:
-    return rx.vstack(
+    return rx.link(
+        rx.vstack(
         rx.image(
             src="/logo.png", 
             width="80px", 
@@ -19,4 +20,7 @@ def footer() -> rx.Component:
         padding=Size.SMALL.value,
         align_items="center",  
         width="100%" 
+    ),
+        href=router.Route.INDEX.value
+        
     )

@@ -22,7 +22,7 @@ def index_links() -> rx.Component:
                 ),
             link_button(
                 "GitHub", 
-                "My GitHub profile and some repositories that I've been working on.",
+                "Some repositories that I've been working on.",
                 "/github.svg", 
                 constants.GITHUB_URL
                 ),
@@ -36,7 +36,7 @@ def index_links() -> rx.Component:
             title("Contact"),
             link_button(
                 "Linktr.ee", 
-                "How to reach me",
+                "How to reach me.",
                 "/contacto.svg", 
                 constants.LINKTREE
                 ),

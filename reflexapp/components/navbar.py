@@ -1,6 +1,6 @@
 import reflex as rx
 import reflexapp.styles.styles as Styles
-import reflexapp.routes.routes as routes
+import reflexapp.routes.routes as router
 from reflexapp.styles.styles import Size as Size
 from reflexapp.styles.colors import TextColor as TextColor
 from reflexapp.styles.colors import Colors as Colors
@@ -13,7 +13,7 @@ def navbar() -> rx.Component:
                 height="30px",border_radius="50%"),
                 rx.text.strong("olbapdev",color=Colors.PRIMARY.value,style=Styles.navbar_title_style)
             ),
-        href=routes.Route.INDEX.value),
+        href=router.Route.INDEX.value),
         position="sticky",
         bg=Colors.CONTENT.value,
         padding_x=Size.DEFAULT.value,

@@ -28,7 +28,7 @@ def header() -> rx.Component:
                 color=TextColor.BODY.value,
                 font_size=Size.MEDIUM.value),
         rx.unordered_list(
-            rx.list_item("Front-End: HTML, CSS, JavaScript, Angular and Reflex.", color=TextColor.BODY.value, font_size=Size.MEDIUM.value),
+            rx.list_item("Front-End: HTML, CSS, JavaScript, TypeScript, Angular and Reflex.", color=TextColor.BODY.value, font_size=Size.MEDIUM.value),
             rx.list_item("Back-End: .NET, C#, Java, Python, NodeJs(ExpressJs), Supabase and Reflex.", color=TextColor.BODY.value, font_size=Size.MEDIUM.value),
             rx.list_item("Database Management: SQLServer, MySQL, PostgreSQL and MongoDB.", color=TextColor.BODY.value, font_size=Size.MEDIUM.value),
             rx.list_item("Scrum Methodology (Jira Software).", color=TextColor.BODY.value, font_size=Size.MEDIUM.value),

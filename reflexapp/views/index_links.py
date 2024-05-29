@@ -13,10 +13,18 @@ def index_links() -> rx.Component:
                 routes.Route.PROJECTS.value,
                 is_external = False
                 ),
+            title("Resume"),
+            link_button(
+                "Look at my resume", 
+                "Programming and English studies",
+                "/github.svg", 
+                routes.Route.RESUME.value,
+                is_external = False
+                ),
             title("My Social Networks"),
             link_button(
                 "LinkedIn",
-                "There you will find my cv.",
+                "My Linkedin profile with more information.",
                 "/linkedin.svg", 
                 constants.LINKEDIN_URL
                 ),

@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+# C extensions
+# Distribution / packaging
+# Environments
+# Flask stuff
+# Generated files
+# Installer logs
+# Jupyter Notebook
+# Local environment
+# PyBuilder
+# Scrapy stuff
+# Sphinx documentation
+# Unit test / coverage reports
+# mypy
+# pyenv
+*.c
+*.cover
+*.db
+*.egg
+*.egg-info/
+*.h
+*.py[cod]
+*.so
+.Python
+.dmypy.json
+.env
+.hypothesis/
+.ipynb_checkpoints
+.mypy_cache/
+.nox/
+.pytest_cache/
+.python-version
+.scrapy
+.tox/
+.venv
+.web
+.web/
+ENV.bak/
+ENV/
+__pycache__/
+build/
+coverage.xml
+dist/
+dmypy.json
+docs/_build/
+env.bak/
+env/
+gen/
+htmlcov/
+instance/
+local_env/
+pip-delete-this-directory.txt
+pip-log.txt
+target/
+venv.bak/
+venv/

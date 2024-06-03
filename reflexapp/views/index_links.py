@@ -9,14 +9,14 @@ def index_links() -> rx.Component:
             link_button(
                 "Look at my resume", 
                 "Programming and English studies",
-                "/github.svg", 
+                "/resume.svg", 
                 routes.Route.RESUME.value,
                 is_external = False
                 ),
             title("Personal Projects"),
             link_button(
                 "GitHub Repositories", 
-                "HTML, CSS, JS, Angular, SQL, Supabase, Reflex and Python.",
+                "Angular, HTML, CSS, JS, NodeJs(ExpressJs), SQL, Supabase, Reflex and Python.",
                 "/github.svg", 
                 routes.Route.PROJECTS.value,
                 is_external = False
@@ -31,7 +31,7 @@ def index_links() -> rx.Component:
                 ),
             link_button(
                 "GitHub", 
-                "Some repositories that I've been working on.",
+                "My GitHub profile with all my projects and stats.",
                 "/github.svg", 
                 constants.GITHUB_URL
                 ),

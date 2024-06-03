@@ -9,25 +9,25 @@ def projects_links() -> rx.Component:
             link_button(
                 "E-commerce", 
                 "Front-End Developed with Framework Angular.",
-                "/github.svg", 
+                "/angular.svg", 
                 constants.REPO_GITHUBFRONT
                 ),
             link_button(
                 "E-commerce", 
                 "Back-End Developed with NodeJs(Framework ExpressJs).",
-                "/github.svg", 
+                "/node.svg", 
                 constants.REPO_GITHUBBACK
                 ),
             link_button(
                 "Full-Stack project", 
                 "Developed with Angular and Supabase.",
-                "/github.svg", 
+                "/angular.svg", 
                 constants.SUPABASE_GITHUB
                 ),
             link_button(
                 "My portfolio website", 
                 "Developed with Reflex(Python).",
-                "/github.svg", 
+                "/python.svg", 
                 constants.PORTFOLIO_GITHUB
                 ),
             width="100%",

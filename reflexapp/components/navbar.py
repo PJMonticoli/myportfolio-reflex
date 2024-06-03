@@ -10,8 +10,8 @@ def navbar() -> rx.Component:
         rx.link(
             rx.flex(
                 rx.image(src="/logo.png",width="30px", 
-                height="30px",border_radius="50%"),
-                rx.text.strong("olbapdev",color=Colors.PRIMARY.value,style=Styles.navbar_title_style)
+                height="30px",border_radius="50%",margin_right="5px"),
+                rx.text.strong("pmonticoli",color=Colors.PRIMARY.value,style=Styles.navbar_title_style)
             ),
         href=router.Route.INDEX.value),
         position="sticky",

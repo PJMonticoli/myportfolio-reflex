@@ -1,7 +1,7 @@
 from enum import Enum
 class Colors(Enum):
     PRIMARY = "#14A1F0"
-    SECONDARY = "#087ec4"
+    SECONDARY = "#435585"
     BACKGROUND = "#0C151D"
     CONTENT = "#171F26"
     

@@ -16,7 +16,7 @@ def curriculum() -> rx.Component:
             navbar(),
             rx.center(
                 rx.vstack(
-                    header(),
+                    header(details=True),
                     resume(),
                     footer(),
                     max_width= styles.MAX_WIDTH,

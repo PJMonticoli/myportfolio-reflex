@@ -10,14 +10,20 @@ def resume() -> rx.Component:
             src="/resume.png",
             width="100%",  
             height="auto",  
-            alt="resume"
+            alt="resume",
+            style = {
+               "border-radius": "3%" 
+            }
         ),
             rx.image(
             src="/cambridge.png",
             width="100%",  
             height="auto",  
-            alt="cambridge" 
-            )  
+            alt="cambridge",
+            style = {
+               "border-radius": "3%" 
+            } 
+        )  
     ) 
 
     

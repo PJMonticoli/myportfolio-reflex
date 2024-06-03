@@ -5,14 +5,6 @@ import reflexapp.views.constants as constants
 import reflexapp.routes.routes as routes
 def index_links() -> rx.Component:
     return rx.vstack(
-            title("Personal Projects"),
-            link_button(
-                "GitHub Repositories", 
-                "HTML, CSS, JS, Angular, SQL, Supabase, Reflex and Python.",
-                "/github.svg", 
-                routes.Route.PROJECTS.value,
-                is_external = False
-                ),
             title("Resume"),
             link_button(
                 "Look at my resume", 
@@ -21,6 +13,15 @@ def index_links() -> rx.Component:
                 routes.Route.RESUME.value,
                 is_external = False
                 ),
+            title("Personal Projects"),
+            link_button(
+                "GitHub Repositories", 
+                "HTML, CSS, JS, Angular, SQL, Supabase, Reflex and Python.",
+                "/github.svg", 
+                routes.Route.PROJECTS.value,
+                is_external = False
+                ),
+
             title("My Social Networks"),
             link_button(
                 "LinkedIn",

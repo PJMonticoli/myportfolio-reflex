@@ -20,7 +20,7 @@ def index() -> rx.Component:
             navbar(),
             rx.center(
                 rx.vstack(
-                    header(),
+                    header(details=True),
                     index_links(),
                     footer(),
                     max_width= styles.MAX_WIDTH,

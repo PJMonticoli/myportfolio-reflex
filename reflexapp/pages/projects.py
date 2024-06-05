@@ -7,6 +7,7 @@ import reflexapp.styles.styles as styles
 from reflexapp.styles.styles import Size
 import reflexapp.utils as utils
 from reflexapp.routes.routes import Route
+from reflexapp.views.projects_stats import mystats
 @rx.page(
   route = Route.PROJECTS.value,  
   title= utils.projects_title,  
@@ -23,6 +24,7 @@ def projects() -> rx.Component:
                 rx.vstack(
                     header(details=False),
                     projects_links(),
+                    mystats(),
                     footer(),
                     max_width= styles.MAX_WIDTH,
                     width="100%",

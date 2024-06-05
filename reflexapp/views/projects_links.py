@@ -30,6 +30,7 @@ def projects_links() -> rx.Component:
                 "/python.svg", 
                 constants.PORTFOLIO_GITHUB
                 ),
+            title("🔥 My GitHub Stats"),
             width="100%",
             align_items="start"
         )

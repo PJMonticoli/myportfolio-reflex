@@ -9,7 +9,7 @@ MAX_WIDTH = "600px"
 # Sizes
 class Size(Enum):
     SMALL= "0.5em"
-    MEDIUM= "0.9em"
+    MEDIUM= "0.95em"
     DEFAULT= "1.2em"
     LARGE = "1.5em"
     BIG= "2em"

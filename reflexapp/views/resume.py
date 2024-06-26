@@ -6,26 +6,22 @@ from reflexapp.styles.styles import Size as Size
 
 def resume() -> rx.Component:
     return rx.vstack(
-            rx.image(
-            src="/resume.png",
-            width="100%",  
-            height="auto",  
+        rx.image(
+            src="/resume.webp",
+            width="100%",
+            height="auto",
             alt="resume",
-            style = {
-               "border-radius": "3%" 
+            style={
+                "border-radius": "3%"
             }
         ),
-            rx.image(
-            src="/cambridge.png",
-            width="100%",  
-            height="auto",  
+        rx.image(
+            src="/cambridge.jpg",
+            width="100%",
+            height="auto",
             alt="cambridge",
-            style = {
-               "border-radius": "3%" 
-            } 
-        )  
-    ) 
-
-    
- 
-
+            style={
+                "border-radius": "3%"
+            }
+        )
+    )

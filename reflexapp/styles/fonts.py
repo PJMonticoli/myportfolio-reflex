@@ -1,7 +1,7 @@
 from enum import Enum
 
+
 class Font(Enum):
-    DEFAULT = "Poppins-Light"
+    DEFAULT = "OnestVariable"
     TITLE = "Poppins-Bold"
     LOGO = "Comfortaa-Medium"
-    

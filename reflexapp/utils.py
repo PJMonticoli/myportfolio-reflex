@@ -17,7 +17,7 @@ _meta = [
 
 
 # Index
-index_title = "pmonticoli | Programmer"
+index_title = "pablodev | Portfolio"
 index_descripcion = "Hi, my name is Pablo Montícoli and I'm a Full-Stack Developer"
 
 index_meta = [
@@ -28,7 +28,7 @@ index_meta.extend(_meta)
 
 
 # Projects
-projects_title = "pmonticoli | Programmer"
+projects_title = "pablodev | Portfolio"
 projects_descripcion = "There you will find some projects that I've been working on"
 
 projects_meta = [

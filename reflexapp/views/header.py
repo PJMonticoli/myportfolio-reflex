@@ -2,6 +2,7 @@ import reflex as rx
 from reflexapp.styles.colors import TextColor, Colors
 from reflexapp.styles.styles import Size
 import reflexapp.routes.routes as router
+from reflexapp.views.constants import LINKEDIN_URL
 
 
 def header(details: bool) -> rx.Component:
@@ -22,7 +23,13 @@ def header(details: bool) -> rx.Component:
             ),
             rx.vstack(
                 rx.heading("Pablo Javier Montícoli", size="6",
-                           color=TextColor.WHITE.value)
+                           color=TextColor.WHITE.value),
+                rx.link(
+                    rx.badge("Open to Work", variant="solid",
+                             color_scheme="violet", radius="large", size="2"),
+                    href=LINKEDIN_URL,
+                    target="_blank"
+                )
             ),
             spacing="6",
             align_items="start"
@@ -30,42 +37,45 @@ def header(details: bool) -> rx.Component:
         rx.cond(
             details,
             rx.box(
-                rx.text.strong("Hey, I'm Pablo", color=TextColor.BODY.value),
+                rx.text.strong("Hey, I'm Pablo",
+                               color=TextColor.BODY.value, size="6"),
                 rx.box(
                     rx.text(
                         "+1 year of experience as a ",
                         color=TextColor.BODY.value,
-                        display="inline"
+                        display="inline", size="4"
                     ),
                     rx.text(
-                        "Full-Stack Developer, graduated from the National Technological University. ",
+                        "Full-Stack Developer, graduated from the National Technological University as a Programming Technician. ",
                         color=TextColor.DESCRIPTION.value,
-                        display="inline"
+                        display="inline", size="4"
                     ),
-                    rx.text(
-                        "I'm From Córdoba, Argentina 🇦🇷. Specialized in developing unique applications and continuous learning.",
-                        color=TextColor.BODY.value,
-                        display="inline"
+                    rx.box(
+                        rx.text(
+                            "I'm From Córdoba, Argentina 🇦🇷. Specialized in developing unique applications and continuous learning.",
+                            color=TextColor.BODY.value,
+                            display="inline", size="4"
+                        )
                     )
                 ),
-                rx.unordered_list(
-                    rx.list_item(
-                        "Front-End: HTML, CSS, JavaScript, TypeScript, Angular and Reflex.",
-                        color=TextColor.BODY.value, font_size=Size.MEDIUM.value
-                    ),
-                    rx.list_item(
-                        "Back-End: .NET, C#, Java, Python, NodeJs(ExpressJs), Supabase and Reflex.",
-                        color=TextColor.BODY.value, font_size=Size.MEDIUM.value
-                    ),
-                    rx.list_item(
-                        "Database Management: SQLServer, MySQL, PostgreSQL and MongoDB.",
-                        color=TextColor.BODY.value, font_size=Size.MEDIUM.value
-                    ),
-                    rx.list_item(
-                        "Scrum Methodology (Jira Software).",
-                        color=TextColor.BODY.value, font_size=Size.MEDIUM.value
-                    ),
-                )
+                # rx.unordered_list(
+                #     rx.list_item(
+                #         "Front-End: HTML, CSS, JavaScript, TypeScript, Angular and Reflex.",
+                #         color=TextColor.BODY.value, font_size=Size.MEDIUM.value
+                #     ),
+                #     rx.list_item(
+                #         "Back-End: .NET, C#, Java, Python, NodeJs(ExpressJs), Supabase and Reflex.",
+                #         color=TextColor.BODY.value, font_size=Size.MEDIUM.value
+                #     ),
+                #     rx.list_item(
+                #         "Database Management: SQLServer, MySQL, PostgreSQL and MongoDB.",
+                #         color=TextColor.BODY.value, font_size=Size.MEDIUM.value
+                #     ),
+                #     rx.list_item(
+                #         "Scrum Methodology (Jira Software).",
+                #         color=TextColor.BODY.value, font_size=Size.MEDIUM.value
+                #     ),
+                # )
             )
         ),
         align_items="start",

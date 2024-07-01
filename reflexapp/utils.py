@@ -7,7 +7,7 @@ def lang() -> rx.Component:
     return rx.script("document.documentElement.lang='en'")
 
 
-preview = "https://pmonticoliportfolio.reflex.run/preview.png"
+preview = "https://pmonticoliportfolio.reflex.run/preview.webp"
 _meta = [
     {"name": "og:type", "content": "website"},
     {"name": "og:image", "content": preview},

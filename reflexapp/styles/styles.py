@@ -68,3 +68,5 @@ title_styles = dict(
 STYLESSHEETS = [
     "https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
 ]
+
+notranslate = dict(class_name="notranslate")

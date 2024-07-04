@@ -3,6 +3,7 @@ from reflexapp.styles.colors import TextColor, Colors
 from reflexapp.styles.styles import Size
 import reflexapp.routes.routes as router
 from reflexapp.views.constants import LINKEDIN_URL
+from reflexapp.styles.styles import notranslate
 
 
 def header(details: bool) -> rx.Component:
@@ -25,8 +26,14 @@ def header(details: bool) -> rx.Component:
                 rx.heading("Pablo Javier Montícoli", size="6",
                            color=TextColor.WHITE.value),
                 rx.link(
-                    rx.badge("Open to Work", variant="solid",
-                             color_scheme="violet", radius="large", size="2"),
+                    rx.badge(
+                        "Open to Work",
+                        variant="solid",
+                        color_scheme="violet",
+                        radius="large",
+                        size="2",
+                        class_name=notranslate['class_name']
+                    ),
                     href=LINKEDIN_URL,
                     target="_blank"
                 )
@@ -41,12 +48,12 @@ def header(details: bool) -> rx.Component:
                                color=TextColor.BODY.value, size="6"),
                 rx.box(
                     rx.text(
-                        "+1 year of experience as a ",
+                        "Over 1 year of experience as a ",
                         color=TextColor.BODY.value,
                         display="inline", size="4"
                     ),
                     rx.text(
-                        "Full-Stack Developer, graduated from the National Technological University as a Programming Technician. ",
+                        " Full-Stack Developer, graduated from the National Technological University as a Programming Technician. ",
                         color=TextColor.DESCRIPTION.value,
                         display="inline", size="4"
                     ),

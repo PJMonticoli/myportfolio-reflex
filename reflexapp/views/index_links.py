@@ -39,8 +39,8 @@ def index_links() -> rx.Component:
         ),
         title("Contact"),
         link_button(
-            "Mail me to",
-            "How to reach me.",
+            "Contact me",
+            "Send me an email.",
             "/contacto.svg",
             constants.CONTACT
         ),

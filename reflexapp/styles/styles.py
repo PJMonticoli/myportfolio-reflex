@@ -4,8 +4,8 @@ from .colors import Colors as Color
 from .colors import TextColor as TextColor
 from .fonts import Font as Font
 # Constantes
-MAX_WIDTH = "600px"
-
+MAX_WIDTH = "800px"
+MOBILE_MAX_WIDTH = "95%"  
 # Sizes
 
 
@@ -20,29 +20,26 @@ class Size(Enum):
 
 
 BASE_STYLE = {
-    "font_family": Font.DEFAULT.value,
-    "background_image": Color.BACKGROUND.value,
     rx.button: {
         "width": "100%",
         "height": "100%",
         "padding": Size.SMALL.value,
-        "border_radius": Size.DEFAULT.value,
+        "border_radius": "12px",  
         "color": TextColor.HEADER.value,
         "background_color": Color.CONTENT.value,
+        "transition": "all 0.3s ease",
+        "box_shadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
         "cursor": "pointer",
         "white_space": "normal",
         "text_align": "start",
         "_hover": {
             "background_color": Color.SECONDARY.value,
+            "transform": "translateY(-3px)",
+            "box_shadow": "0 6px 8px rgba(0, 0, 0, 0.2)",
             "cursor": "pointer"
         }
-    },
-    rx.link: {
-        "text_decoration": "none",
-        "_hover": {}
     }
 }
-
 button_title_style = dict(
     font_size=Size.DEFAULT.value,
     font_family=Font.TITLE.value

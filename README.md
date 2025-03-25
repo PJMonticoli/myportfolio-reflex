@@ -15,3 +15,7 @@ pip install reflex
 
 ## Para ejecutar el proyecto, usa el siguiente comando:
 reflex run
+
+
+## Para realizar un deploy, usa el siguiente comando:
+reflex deploy --app-name pmonticoliportfolio 

@@ -9,16 +9,17 @@ def index_links() -> rx.Component:
     return rx.vstack(
         title("Resume"),
         link_button(
-            "Look at my resume",
-            "Programming and English studies",
+            "Take a look at my resume",
+            "Includes programming education and English certifications.",
             "/resume.svg",
             routes.Route.RESUME.value,
             is_external=False
         ),
+        
         title("Projects"),
         link_button(
             "GitHub Repositories",
-            "Angular, HTML, CSS, JS, NodeJs(ExpressJs), SQL, Supabase, Reflex and Python.",
+            "Projects developed with Angular, Node.js, Supabase, Reflex, Python, and more.",
             "/github.svg",
             routes.Route.PROJECTS.value,
             is_external=False
@@ -27,20 +28,21 @@ def index_links() -> rx.Component:
         title("My Social Networks"),
         link_button(
             "LinkedIn",
-            "My Linkedin profile with more information.",
+            "Connect with me on LinkedIn for more details about my work.",
             "/linkedin.svg",
             constants.LINKEDIN_URL
         ),
         link_button(
             "GitHub",
-            "My GitHub profile with all my projects and stats.",
+            "Explore all my repositories and GitHub activity.",
             "/github.svg",
             constants.GITHUB_URL
         ),
+
         title("Contact"),
         link_button(
             "Contact me",
-            "Send me an email.",
+            "Feel free to reach out via email.",
             "/contacto.svg",
             constants.CONTACT
         ),

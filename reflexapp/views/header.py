@@ -12,34 +12,46 @@ def header(details: bool) -> rx.Component:
             rx.link(
                 rx.avatar(
                     fallback="PM",
-                    size="6",
+                    size="7", 
                     src="/avatar.webp",
                     style={
                         "border-radius": "50%",
-                        "padding": "2px",
-                        "border": f"3px solid {Colors.DESCRIPTION.value}"
+                        "border": f"4px solid {Colors.PRIMARY.value}",
+                        "box-shadow": "0 4px 6px rgba(0, 0, 0, 0.1)"
                     }
                 ),
                 href=router.Route.INDEX.value
             ),
             rx.vstack(
-                rx.heading("Pablo Javier Montícoli", size="6",
-                           color=TextColor.WHITE.value),
+                rx.heading(
+                    "Pablo Javier Montícoli", 
+                    size="6",
+                    color=TextColor.WHITE.value,
+                    style={"letter-spacing": "1px"}
+                ),
                 rx.link(
                     rx.badge(
                         "Open to Work",
-                        variant="solid",
+                        variant="surface",
                         color_scheme="violet",
                         radius="large",
                         size="2",
-                        class_name=notranslate['class_name']
+                        class_name=notranslate['class_name'],
+                        style={
+                            "animation": "pulse 2s infinite",
+                            "@keyframes pulse": {
+                                "0%": {"transform": "scale(1)"},
+                                "50%": {"transform": "scale(1.05)"},
+                                "100%": {"transform": "scale(1)"}
+                            }
+                        }
                     ),
                     href=LINKEDIN_URL,
                     target="_blank"
                 )
             ),
             spacing="6",
-            align_items="start"
+            align_items="center"
         ),
         rx.cond(
             details,
@@ -65,24 +77,6 @@ def header(details: bool) -> rx.Component:
                         )
                     )
                 ),
-                # rx.unordered_list(
-                #     rx.list_item(
-                #         "Front-End: HTML, CSS, JavaScript, TypeScript, Angular and Reflex.",
-                #         color=TextColor.BODY.value, font_size=Size.MEDIUM.value
-                #     ),
-                #     rx.list_item(
-                #         "Back-End: .NET, C#, Java, Python, NodeJs(ExpressJs), Supabase and Reflex.",
-                #         color=TextColor.BODY.value, font_size=Size.MEDIUM.value
-                #     ),
-                #     rx.list_item(
-                #         "Database Management: SQLServer, MySQL, PostgreSQL and MongoDB.",
-                #         color=TextColor.BODY.value, font_size=Size.MEDIUM.value
-                #     ),
-                #     rx.list_item(
-                #         "Scrum Methodology (Jira Software).",
-                #         color=TextColor.BODY.value, font_size=Size.MEDIUM.value
-                #     ),
-                # )
             )
         ),
         align_items="start",

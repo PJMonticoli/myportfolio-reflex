@@ -8,28 +8,34 @@ def projects_links() -> rx.Component:
     return rx.vstack(
         title("GitHub Repositories"),
         link_button(
-            "E-commerce",
-            "Front-End Developed with Framework Angular.",
+            "Chocolate Shop - Frontend",
+            "E-commerce UI developed in Angular for managing a chocolate store.",
             "/angular.svg",
             constants.REPO_GITHUBFRONT
         ),
         link_button(
-            "E-commerce",
-            "Back-End Developed with NodeJs(Framework ExpressJs).",
+            "Chocolate Shop - Backend",
+            "RESTful API built with Node.js and Express.js for product and order management.",
             "/node.svg",
             constants.REPO_GITHUBBACK
         ),
         link_button(
-            "Full-Stack project",
-            "Developed with Angular and Supabase.",
-            "/angular.svg",
-            constants.SUPABASE_GITHUB
+            "Pallet Management System",
+            "Logistics system built in .NET Framework for managing pallet operations: movement tracking, real-time inventory, automated reports, and client/transporter management.",
+            "https://cdn.simpleicons.org/dotnet",  
+            constants.DOTNET_GITHUB  
         ),
         link_button(
-            "Web Portfolio",
-            "Developed with Astro.",
+            "Developer Portfolio",
+            "Personal portfolio built with Astro to showcase projects and experience.",
             "/astro.svg",
             constants.PORTFOLIO_GITHUB
+        ),
+        link_button(
+            "Full-Stack App with Supabase",
+            "Web app combining Angular frontend and Supabase backend for real-time data.",
+            "/angular.svg",
+            constants.SUPABASE_GITHUB
         ),
         title("🔥 My GitHub Stats"),
         width="100%",

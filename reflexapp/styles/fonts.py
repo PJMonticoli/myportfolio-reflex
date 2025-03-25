@@ -2,6 +2,6 @@ from enum import Enum
 
 
 class Font(Enum):
-    DEFAULT = "OnestVariable"
-    TITLE = "Poppins-Bold"
-    LOGO = "Comfortaa-Medium"
+    DEFAULT = "Inter, sans-serif"
+    TITLE = "Inter, sans-serif"
+    LOGO = "Inter, sans-serif"

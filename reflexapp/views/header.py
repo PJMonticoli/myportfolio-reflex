@@ -13,7 +13,7 @@ def header(details: bool) -> rx.Component:
                 rx.avatar(
                     fallback="PM",
                     size="6",
-                    src="/avatar.jpg",
+                    src="/avatar.webp",
                     style={
                         "border-radius": "50%",
                         "padding": "2px",

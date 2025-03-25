@@ -1,3 +1,5 @@
+assets/external/
+.states
 # Byte-compiled / optimized / DLL files
 # C extensions
 # Distribution / packaging
